@@ -1,4 +1,3 @@
-
 const section = document.querySelector("section");
 const turnsPassed = document.querySelector("#turnsPassed");
 let turnsPlayed = 0;
@@ -128,9 +127,9 @@ const randomize = () => {
 };
 
 const cardGenerator = () => {
-  const cardData = randomize();
+  const cardPic = randomize();
 
-  cardData.forEach((item, index) => {
+  cardPic.forEach((item, index) => {
     const card = document.createElement("div");
     const face = document.createElement("img");
     const back = document.createElement("div");
@@ -147,16 +146,16 @@ const cardGenerator = () => {
 
     card.addEventListener("click", (e) => {
       card.classList.toggle("toggleCard");
-      checkCards(e);
+      matchCards(e);
       toggleCard();
     });
   });
 };
 
-const checkCards = (e) => {
+const matchCards = (e) => {
   console.log(e);
-  const clickedCard = e.target;
-  clickedCard.classList.add("flipped");
+  const choice = e.target;
+  choice.classList.add("flipped");
   const flippedCards = document.querySelectorAll(".flipped");
 
   if (flippedCards.length === 2) {
@@ -184,5 +183,3 @@ const checkCards = (e) => {
 };
 
 cardGenerator();
-
-
