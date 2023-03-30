@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R&M Matching Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script> 
+  </head>
+  <audio autoplay loop>
+    <source src="Soulja-Boy-Rick-and-Morty.mp3" type="audio/mpeg"/>
+  </audio>
+  
+  <body class="main">
+    <header>
+      <h1 class="pageTitle">
+        <span class="dropcss">RICK and MORTY</span>
+        Matching Game
+      </h1>
+    </header>
+    <div class="instructions">
+      <p class="typed">Help Rick and Morty on their newest adventure by matching all the tiles that have identical photos.<br> Good luck and GET SCHWIFTY!</p>
+    </div>
+    <h1 class="counter">Turn Counter: <span class="blink" id="turnsPassed"></span></h1>
+    <section></section>
+    <footer>
+      <h2 class="bottombutton">Try Again?</h2>
+      <button class="tryAgain" onclick="location.reload();">
+        <img src="matchingGamePhotos/lvl1/meeseeksBoxtransparent.fw.png" class="meeseeksbox">
+      </button>
+    </footer>
+  </body>
+ 
+</html>

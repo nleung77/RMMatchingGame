@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'GetSchwifty';
+    src: url('get_schwifty.ttf')  format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'arcade';
+    src: url('webpixel-bitmap/webpixel_bitmap/webpixel bitmap_bold-italic.otf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  background-image: url("matchingGamePhotos/lvl1/widebackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(7, 7.35rem);
+    grid-template-rows: repeat(4, 7.35rem);
+    grid-gap: 14px 14px;
+    perspective: 800px;
+    margin-top: 8px;
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.face,
+.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.back{
+    background-image: url("matchingGamePhotos/lvl1/cardBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    backface-visibility: hidden;
+}
+
+.toggleCard{
+    transform: rotateY(180deg);
+}
+
+  .pageTitle {
+    padding: 12px;
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'GetSchwifty'; src: url('get_schwifty.ttf');
+    color: #97ce4c;
+    background-color: black;
+  }
+
+  .blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .counter {
+    padding: 6px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'arcade'; src:url('webpixel-bitmap/webpixel_bitmap/webpixel bitmap_bold-italic.otf');
+    color: black;
+    background: linear-gradient(#a8ff78, #78ffd6);
+  }
+
+  .tryAgain{
+   border: none;
+   cursor: pointer;
+   appearance: none;
+   background-color: inherit;
+   transition: transform 0.7s ease-in-out;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .tryAgain:hover {
+    transform: rotate(360deg);
+  }
+
+  .bottombutton {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'arcade'; src:url('webpixel-bitmap/webpixel_bitmap/webpixel bitmap_bold-italic.otf');
+    color: black;
+    background: linear-gradient(#a8ff78, #78ffd6);
+    margin-top: 8px;
+  } 
+
+  .meeseeksbox {
+    width: 130px;
+    height: 130px; 
+    margin-top: 15px;
+  }
+
+  .dropcss {
+    margin: 1rem auto;
+    animation: neon 1.5s ease infinite;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #116530, 0 0 20px #116530, 0 0 20px #116530, 0 0 20px #116530, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #A3EBB1;
+    }
+    50% {
+        text-shadow: 0 0 2px , 0 0 5px #21B6A8, 0 0 5px #21B6A8, 0 0 5px #21B6A8, 0 0 2px #21B6A8, 4px 4px 2px #40340a;
+        color: #18A558;
+    }
+}
+
+.instructions{
+  display: inline block;
+  font-family: 'arcade'; src:url('webpixel-bitmap/webpixel_bitmap/webpixel bitmap_bold-italic.otf');
+  background: linear-gradient(#a8ff78, #78ffd6);
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.typed{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(50, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to {width: 100% }
+}
+
+ 
