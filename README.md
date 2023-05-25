@@ -1,8 +1,8 @@
 # _{Rick and Morty Matching Game}_
 
-#### By _**{Nelson Leung}**_
+### By _**{Nelson Leung}**_
 
-#### _{A simple and logical javascript game.}_
+### _{A simple and logical javascript game.}_
 
 ## Technologies Used
 
