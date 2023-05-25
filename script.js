@@ -6,12 +6,12 @@ turnsPassed.textContent = turnsPlayed;
 
 const getData = () => [
   {
-    imgSrc: "matchingGamePhotos/lvl1/tinyRicktransparent.fw.png",
-    name: "tinyRick",
-  },
-  {
     imgSrc: "matchingGamePhotos/lvl1/pickleRicktransparent.fw.png",
     name: "pickleRick",
+  },
+  {
+    imgSrc: "matchingGamePhotos/lvl1/tinyRicktransparent.fw.png",
+    name: "tinyRick",
   },
   {
     imgSrc: "matchingGamePhotos/lvl1/theDeviltransparent.fw.png",
@@ -194,7 +194,6 @@ function gameOver() {
   modalTurnsPlayed.textContent = turnsPlayed;
 }
 
-closeModal.onclick = function() {
+closeModal.onclick = function () {
   modal.style.display = "none";
-}
-
+};
