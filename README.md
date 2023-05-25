@@ -10,6 +10,7 @@
 * _HTML_
 * _CSS_
 * _CSS Animations and Keyframes_
+* _VSCode_
 
 ## Description
 
