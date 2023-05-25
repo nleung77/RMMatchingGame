@@ -183,17 +183,3 @@ const matchCards = (e) => {
 };
 
 cardGenerator();
-
-const modal = document.getElementById("modal");
-const modalContent = document.querySelector(".modal-content");
-const modalTurnsPlayed = document.getElementById("modalTurnsPlayed");
-const closeModal = document.querySelector(".close");
-
-function gameOver() {
-  modal.style.display = "block";
-  modalTurnsPlayed.textContent = turnsPlayed;
-}
-
-closeModal.onclick = function () {
-  modal.style.display = "none";
-};
