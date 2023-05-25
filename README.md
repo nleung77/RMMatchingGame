@@ -14,7 +14,7 @@
 
 ## Description
 
-_Rick and Morty need your assistance on their latest adventure! They have gotten trapped, and need you to solve the puzzle and help them escape! The game is a simple game of matching, each set of identical photos is considered a match. Keep trying until you find all matches on the board. Complete the game and help the duo escape! Try to finish the game in as little turns as possible!_
+_Rick and Morty need your assistance on their latest adventure! They have gotten trapped, and need you to solve the puzzle and help them escape! The game is a simple game of matching, each set of identical photos is considered a match. Keep trying until you find all matches on the board. Complete the game and help the duo escape! Try to finish the game in as few turns as possible!_
 
 
 ## License
